@@ -219,8 +219,8 @@ svg .gridl{stroke:var(--grid);stroke-width:1}
 
 <section id="s11"><h2><span class="n">11</span><span data-i18n="h11"></span></h2>
   <div class="prose"><p data-i18n="p11"></p></div>
-  <div class="key"><span><i>D</i> = ½<i>CρAv</i><sup>2</sup></span><span><i>ma</i> = <i>mg</i> − ½<i>CρAv</i><sup>2</sup></span><span><i>v</i><sub>t</sub> = <span class='sqrt'><span>2<i>mg</i>/<i>CρA</i></span></span></span></div>
-  <div class="sim"><div class="viz"><svg id="v11" viewBox="0 0 440 240" role="img" aria-label="Speed versus time with drag"></svg></div><div class="controls" id="c11"></div></div>
+  <div class="key"><span><i>D</i> = (1/2)<i>CρAv</i><sup>2</sup></span><span><i>ma</i> = <i>mg</i> − (1/2)<i>CρAv</i><sup>2</sup></span><span><i>v</i><sub>t</sub> = <span class='sqrt'><span>2<i>mg</i>/<i>CρA</i></span></span></span></div>
+  <div class="sim"><div class="viz"><svg id="v11a" viewBox="0 0 440 290" role="img" aria-label="The object falling with and without drag"></svg><svg id="v11" viewBox="0 0 440 240" role="img" aria-label="Speed versus time with drag"></svg></div><div class="controls" id="c11"></div></div>
 </section>
 
 <section id="s12"><h2><span class="n">12</span><span data-i18n="h12"></span></h2>
@@ -241,17 +241,17 @@ en:{
  play:"Play",pause:"Pause",reset:"Start again",mass:"Mass <i>m</i>",
  h1:"Newton's second (and first) law",
  p1a:"Newton's second law: the acceleration of an object is proportional to the vector sum of the forces acting on it (the net force <b>F</b><sub>net</sub>), and the proportionality constant is the mass: Σ<b>F</b> = <i>m</i><b>a</b> = <i>m</i> d<b>v</b>/d<i>t</i> = <i>m</i> d<sup>2</sup><b>r</b>/d<i>t</i><sup>2</sup>. If the net force is zero, the acceleration is zero, which is Newton's first law. Force has the dimension of mass × acceleration = mass × length/time<sup>2</sup>, and its SI unit is kg·m/s<sup>2</sup> = N (newton): the force needed to give a 1 kg object an acceleration of 1 m/s<sup>2</sup>.",
- p1b:"Recall from kinematics: differentiating with respect to time takes <i>x</i> → <i>v</i> → <i>a</i>, and integrating (area under the curve) takes <i>a</i> → <i>v</i> → <i>x</i>. A constant force <i>F</i> means a constant acceleration <i>a</i> = <i>F</i>/<i>m</i>, so starting from rest <i>v</i> = <i>at</i> and <i>x</i> = ½<i>at</i><sup>2</sup>. In two or more dimensions, apply Σ<b>F</b> = <i>m</i><b>a</b> component by component.",
+ p1b:"Recall from kinematics: differentiating with respect to time takes <i>x</i> → <i>v</i> → <i>a</i>, and integrating (area under the curve) takes <i>a</i> → <i>v</i> → <i>x</i>. A constant force <i>F</i> means a constant acceleration <i>a</i> = <i>F</i>/<i>m</i>, so starting from rest <i>v</i> = <i>at</i> and <i>x</i> = (1/2)<i>at</i><sup>2</sup>. In two or more dimensions, apply Σ<b>F</b> = <i>m</i><b>a</b> component by component.",
  springH:"Example: a restoring force",springP:"Earlier we found the motion <i>a</i>(<i>t</i>) = sin <i>t</i>, <i>v</i>(<i>t</i>) = −cos <i>t</i>, <i>x</i>(<i>t</i>) = −sin <i>t</i>, with <i>a</i> + <i>x</i> = 0 at all times. With the second law, <i>F</i>/<i>m</i> = <i>a</i> = −<i>x</i>, so <i>F</i> = −<i>mx</i>: a restoring force, like that of a spring.",
  frameH:"Inertial frames",frameP:"Two observers moving at constant velocity relative to each other measure the same acceleration (<b>a</b><sub>PA</sub> = <b>a</b><sub>PB</sub>), so they agree on <b>F</b> = <i>m</i><b>a</b>. Such frames are inertial reference frames. In an accelerating frame you would need fictitious forces (inertial forces, such as the centrifugal force or the Coriolis force, or the push you feel when a car speeds up, slows down or turns) to make the second law work.",
  F1:"Force <i>F</i><sub>1</sub> (to the right)",F2:"Force <i>F</i><sub>2</sub> (to the left)",
- rNet:"Net force Σ<i>F</i>",rA1:"Acceleration <i>a</i> = Σ<i>F</i>/<i>m</i>",rV1:"Velocity <i>v</i> = <i>at</i>",rX1:"Position <i>x</i> = ½<i>at</i><sup>2</sup>",rState1:"Motion",still:"stays at rest (Σ<i>F</i> = 0, first law)",acc1:"accelerates",
+ rNet:"Net force Σ<i>F</i>",rA1:"Acceleration <i>a</i> = Σ<i>F</i>/<i>m</i>",rV1:"Velocity <i>v</i> = <i>at</i>",rX1:"Position <i>x</i> = (1/2)<i>at</i><sup>2</sup>",rState1:"Motion",still:"stays at rest (Σ<i>F</i> = 0, first law)",acc1:"accelerates",
  h2:"Newton's third law",
  p2:"In an isolated system with no outside interactions, if body 1 exerts a force <b>F</b><sub>12</sub> on body 2, then body 2 exerts a force on body 1 that is equal in size and opposite in direction: <b>F</b><sub>21</sub> = −<b>F</b><sub>12</sub>. This is Newton's third law, the law of action and reaction. The two forces always act on different bodies. Here two carts push apart with a compressed spring between them: the forces on the two carts have the same size, but the lighter cart gets the larger acceleration.",
  m1:"Mass <i>m</i><sub>1</sub> (left)",m2:"Mass <i>m</i><sub>2</sub> (right)",Fp:"Push force <i>F</i> (for 0.5 s)",
  rF12:"|<b>F</b><sub>12</sub>| = |<b>F</b><sub>21</sub>|",rAa:"<i>a</i><sub>1</sub>, <i>a</i><sub>2</sub>",rVv:"Final <i>v</i><sub>1</sub>, <i>v</i><sub>2</sub>",rP:"<i>m</i><sub>1</sub><i>v</i><sub>1</sub> + <i>m</i><sub>2</sub><i>v</i><sub>2</sub>",
  h3:"Gravity and weight",
- p3a:"The gravitational force in general comes later. For now, consider the Earth pulling on objects near its surface. An object of mass <i>m</i> feels <b>F</b> = <i>m</i><b>g</b> = −<i>mg</i><b>ĵ</b>, where the gravitational acceleration <b>g</b> points toward the center of the Earth (perpendicular to the ground) with size <i>g</i> ≈ 9.8 m/s<sup>2</sup>. Then <i>m</i><b>a</b> = −<i>mg</i><b>ĵ</b>, so <b>a</b> = <b>g</b>: the mass cancels! Because <i>F</i> ∝ <i>m</i>, every object falls with the same acceleration. Released from rest, <i>v</i><sub>y</sub> = −<i>gt</i> and <i>y</i> = −½<i>gt</i><sup>2</sup>, so falling a height <i>h</i> takes <i>t</i> = <span class='sqrt'><span>2<i>h</i>/<i>g</i></span></span>. The same cancellation of <i>m</i> is why a projectile's path does not depend on its mass.",
+ p3a:"The gravitational force in general comes later. For now, consider the Earth pulling on objects near its surface. An object of mass <i>m</i> feels <b>F</b> = <i>m</i><b>g</b> = −<i>mg</i><b>ĵ</b>, where the gravitational acceleration <b>g</b> points toward the center of the Earth (perpendicular to the ground) with size <i>g</i> ≈ 9.8 m/s<sup>2</sup>. Then <i>m</i><b>a</b> = −<i>mg</i><b>ĵ</b>, so <b>a</b> = <b>g</b>: the mass cancels! Because <i>F</i> ∝ <i>m</i>, every object falls with the same acceleration. Released from rest, <i>v</i><sub>y</sub> = −<i>gt</i> and <i>y</i> = −(1/2)<i>gt</i><sup>2</sup>, so falling a height <i>h</i> takes <i>t</i> = <span class='sqrt'><span>2<i>h</i>/<i>g</i></span></span>. The same cancellation of <i>m</i> is why a projectile's path does not depend on its mass.",
  p3b:"Strictly, weight is mass × gravitational acceleration. A mass of 1 kg has a weight of “1 kg-weight” ≈ 9.8 kg·m/s<sup>2</sup>. The same mass has a different weight where gravity is different. On Earth <i>g</i> is nearly constant, so in everyday life we use kg as a unit of weight with no problem. On the Moon <i>g</i> ≈ 1.62 m/s<sup>2</sup>, so the same object weighs much less, 1.62/9.8 of its weight on Earth.",
  place:"Where",earth:"Earth",moon:"Moon",mars:"Mars",mA:"Mass of ball A",mB:"Mass of ball B",hh:"Height <i>h</i>",drop:"Drop",
  rG:"<i>g</i>",rWA:"Weight of A, <i>m</i><sub>A</sub><i>g</i>",rWB:"Weight of B, <i>m</i><sub>B</sub><i>g</i>",rKg:"Earth scale reading for A",rT3:"Fall time <span class='sqrt'><span>2<i>h</i>/<i>g</i></span></span> (both)",
@@ -262,7 +262,7 @@ en:{
  rN:"<i>N</i> = <i>mg</i>",rN2:"<i>N′</i> = (<i>m</i> + <i>M</i>)<i>g</i>",rScale:"Scale reading",
  pr1:"(1) Earth pulls the stone down ↔ the stone pulls the Earth up",pr2:"(2) The table pushes the stone up (N) ↔ the stone presses on the table (−N)",pr3:"(3) Earth pulls the table down ↔ the table pulls the Earth up",pr4:"(4) The floor pushes the table up (N′) ↔ the table presses on the floor (−N′)",prAll:"Forces of the same color form an action–reaction pair. They act on different bodies.",earthL:"Earth",
  h5:"Motion on a frictionless incline",
- p5:"Tip: the <i>x</i> and <i>y</i> axes do not have to be along gravity. Here it is convenient to take <i>x</i> along the direction the block moves and <i>y</i> perpendicular to it. Then gravity <i>m</i><b>g</b> has a constant <i>x</i> component <i>mg</i> sin <i>θ</i> and a constant <i>y</i> component <i>mg</i> cos <i>θ</i>. Along <i>y</i>, the normal force <b>N</b> from the surface cancels gravity's component, so there is no acceleration. Along <i>x</i>, <i>ma</i> = <i>mg</i> sin <i>θ</i>, so <i>a</i> = <i>g</i> sin <i>θ</i>, <i>v</i> = <i>gt</i> sin <i>θ</i> and <i>x</i> = ½<i>gt</i><sup>2</sup> sin <i>θ</i>. Sliding a distance <i>d</i> takes <i>t</i> = <span class='sqrt'><span>2<i>d</i>/<i>g</i> sin <i>θ</i></span></span>, and the speed is then <span class='sqrt'><span>2<i>gd</i> sin <i>θ</i></span></span>. Check the limits: <i>θ</i> = 0 means no motion, and <i>θ</i> = π/2 is free fall.",
+ p5:"Tip: the <i>x</i> and <i>y</i> axes do not have to be along gravity. Here it is convenient to take <i>x</i> along the direction the block moves and <i>y</i> perpendicular to it. Then gravity <i>m</i><b>g</b> has a constant <i>x</i> component <i>mg</i> sin <i>θ</i> and a constant <i>y</i> component <i>mg</i> cos <i>θ</i>. Along <i>y</i>, the normal force <b>N</b> from the surface cancels gravity's component, so there is no acceleration. Along <i>x</i>, <i>ma</i> = <i>mg</i> sin <i>θ</i>, so <i>a</i> = <i>g</i> sin <i>θ</i>, <i>v</i> = <i>gt</i> sin <i>θ</i> and <i>x</i> = (1/2)<i>gt</i><sup>2</sup> sin <i>θ</i>. Sliding a distance <i>d</i> takes <i>t</i> = <span class='sqrt'><span>2<i>d</i>/<i>g</i> sin <i>θ</i></span></span>, and the speed is then <span class='sqrt'><span>2<i>gd</i> sin <i>θ</i></span></span>. Check the limits: <i>θ</i> = 0 means no motion, and <i>θ</i> = π/2 is free fall.",
  ang:"Angle <i>θ</i>",dist:"Slide distance <i>d</i>",slide:"Release",
  rA5:"<i>a</i> = <i>g</i> sin <i>θ</i>",rN5:"<i>N</i> = <i>mg</i> cos <i>θ</i>",rT5:"Time <i>t</i> = <span class='sqrt'><span>2<i>d</i>/<i>g</i> sin <i>θ</i></span></span>",rV5:"Speed <span class='sqrt'><span>2<i>gd</i> sin <i>θ</i></span></span>",
  h6:"The Atwood machine",
@@ -286,7 +286,7 @@ en:{
  rFr:"Friction <i>f</i>",rFsm:"<i>f</i><sub>s,max</sub> = <i>μ</i><sub>s</sub><i>N</i>",rA10:"Acceleration",rSt10:"The block",stays:"stays still (static friction)",slides:"slides (kinetic friction)",rTan:"tan <i>θ</i> (compare with <i>μ</i><sub>s</sub>)",rTh0:"Slip angle <i>θ</i><sub>0</sub> = arctan <i>μ</i><sub>s</sub>",
  gF10:"Friction f versus pulling force F",
  h11:"Drag and terminal speed",
- p11:"When an object moves through air or another fluid, a drag force <b>D</b> opposes the motion. Its direction is opposite to the motion, and its size is <i>D</i> = ½<i>CρAv</i><sup>2</sup>, where <i>C</i> is the drag coefficient (found by experiment), <i>ρ</i> the density of the fluid (mass per volume), <i>A</i> the cross-sectional area of the object, and <i>v</i> the speed relative to the fluid. For an object falling through air, <i>ma</i> = <i>mg</i> − ½<i>CρAv</i><sup>2</sup>, and the drag keeps changing as the speed changes. This is a differential equation, and solving it for <i>x</i>(<i>t</i>), <i>v</i>(<i>t</i>) and <i>a</i>(<i>t</i>) is hard. But once the object reaches a particular speed <i>v</i><sub>t</sub>, <i>a</i> = 0 because the forces balance, and it cannot speed up any more: <i>mg</i> = ½<i>CρAv</i><span class='ss'><sup>2</sup><sub>t</sub></span>, so the terminal speed is <i>v</i><sub>t</sub> = <span class='sqrt'><span>2<i>mg</i>/<i>CρA</i></span></span>, proportional to <span class='sqrt'><span><i>g</i></span></span> and <span class='sqrt'><span><i>m</i></span></span> and inversely proportional to <span class='sqrt'><span><i>A</i></span></span> and <span class='sqrt'><span><i>ρ</i></span></span>. Example: a raindrop of radius 1.5 mm (<i>C</i> = 0.60, water 1000 kg/m<sup>3</sup>, air 1.2 kg/m<sup>3</sup>) falling from a cloud at <i>h</i> = 1200 m reaches only about 27 km/h. Without drag it would hit the ground at about 550 km/h!",
+ p11:"When an object moves through air or another fluid, a drag force <b>D</b> opposes the motion. Its direction is opposite to the motion, and its size is <i>D</i> = (1/2)<i>CρAv</i><sup>2</sup>, where <i>C</i> is the drag coefficient (found by experiment), <i>ρ</i> the density of the fluid (mass per volume), <i>A</i> the cross-sectional area of the object, and <i>v</i> the speed relative to the fluid. For an object falling through air, <i>ma</i> = <i>mg</i> − (1/2)<i>CρAv</i><sup>2</sup>, and the drag keeps changing as the speed changes. This is a differential equation, and solving it for <i>x</i>(<i>t</i>), <i>v</i>(<i>t</i>) and <i>a</i>(<i>t</i>) is hard. But once the object reaches a particular speed <i>v</i><sub>t</sub>, <i>a</i> = 0 because the forces balance, and it cannot speed up any more: <i>mg</i> = (1/2)<i>CρAv</i><span class='ss'><sup>2</sup><sub>t</sub></span>, so the terminal speed is <i>v</i><sub>t</sub> = <span class='sqrt'><span>2<i>mg</i>/<i>CρA</i></span></span>, proportional to <span class='sqrt'><span><i>g</i></span></span> and <span class='sqrt'><span><i>m</i></span></span> and inversely proportional to <span class='sqrt'><span><i>A</i></span></span> and <span class='sqrt'><span><i>ρ</i></span></span>. Example: a raindrop of radius 1.5 mm (<i>C</i> = 0.60, water 1000 kg/m<sup>3</sup>, air 1.2 kg/m<sup>3</sup>) falling from a cloud at <i>h</i> = 1200 m reaches only about 27 km/h. Without drag it would hit the ground at about 550 km/h!",
  obj:"Falling object",rain:"Raindrop (r = 1.5 mm)",diver:"Skydiver",ball:"Ping-pong ball",Cd:"Drag coefficient <i>C</i>",
  rVt:"Terminal speed <i>v</i><sub>t</sub>",rT95:"Time to reach 95% of <i>v</i><sub>t</sub>",rFree:"Speed after the same drop with no drag",gV11:"Speed v(t) with drag (red), without drag (dashed)",
  h12:"Forces in uniform circular motion",
@@ -346,6 +346,14 @@ function farrow(g,x,y,dx,dy,col,label,lx=6,ly=-6){if(Math.hypot(dx,dy)<2)return;
 function playBtn(c,obj,key="playing"){const b=H("button",{type:"button",class:"btn"},c);const upd=()=>b.innerHTML=t(obj[key]?"pause":"play");b.addEventListener("click",()=>{obj[key]=!obj[key];upd()});obj._btn=upd;return b}
 const N=x=>fx(x,2)+" N";
 
+/* coil spring drawing */
+function coil(g,x0,x1,y,col="var(--magenta)",n=10,R=11){const lead=8,a=x0+lead,b=x1-lead,L=Math.max(4,b-a);const N=n*24,tilt=Math.min(0.42*R,0.45*L/n);
+  const pt=k=>{const t=2*Math.PI*n*k/N;return[a+L*k/N+tilt*Math.sin(t),y-R*Math.cos(t),Math.sin(t)]};
+  const segs=[[],[]];let prev=pt(0);for(let k=1;k<=N;k++){const p=pt(k);segs[(prev[2]+p[2])/2>=0?1:0].push(`M${prev[0].toFixed(1)},${prev[1].toFixed(1)}L${p[0].toFixed(1)},${p[1].toFixed(1)}`);prev=p}
+  const s=pt(0),e=pt(N);E("path",{d:`M${x0},${y}L${s[0].toFixed(1)},${s[1].toFixed(1)}M${e[0].toFixed(1)},${e[1].toFixed(1)}L${x1},${y}`,fill:"none",stroke:col,"stroke-width":2.2,"stroke-linecap":"round"},g);
+  E("path",{d:segs[0].join(""),fill:"none",stroke:col,"stroke-width":1.6,opacity:.45,"stroke-linecap":"round"},g);
+  E("path",{d:segs[1].join(""),fill:"none",stroke:col,"stroke-width":2.6,"stroke-linecap":"round"},g)}
+
 /* hero: block sliding down an incline with its free-body diagram */
 (function(){const g=$("#hero");const th=deg(20);const L=440;
   const A=[270,62],B=[270+L*Math.cos(th),62+L*Math.sin(th)];let s=0;
@@ -379,7 +387,7 @@ const S2={t:0,playing:!reduceMotion};
 function draw2(dt){if(S2.playing){S2.t+=dt;if(S2.t>3.5)S2.t=0}const tt=S2.t,tau=0.5,F=S.F2p,m1=S.m21,m2=S.m22;const a1=F/m1,a2=F/m2;const pos=(a,t)=>t<tau?0.5*a*t*t:0.5*a*tau*tau+a*tau*(t-tau);
   const x1=-pos(a1,tt),x2=pos(a2,tt);const sc=Math.min(18,150/Math.max(1,pos(a1,3.5)));const g=$("#v2");g.innerHTML="";E("line",{x1:10,x2:430,y1:150,y2:150,stroke:"var(--ink)","stroke-width":2},g);
   const w1=30+m1*2,w2=30+m2*2;const c1=200-w1+x1*sc,c2=240+x2*sc;block(g,c1,150-w1*0.7,w1,w1*0.7,"var(--blue)","m₁");block(g,c2,150-w2*0.7,w2,w2*0.7,"var(--red)","m₂");
-  if(tt<tau){let d=`M${c1+w1},125`;const n=8,L2=c2-(c1+w1);for(let k=1;k<n;k++)d+=` L${c1+w1+L2*k/n},${125+(k%2?-8:8)}`;d+=` L${c2},125`;E("path",{d,fill:"none",stroke:"var(--magenta)","stroke-width":2},g);
+  if(tt<tau){coil(g,c1+w1,c2,125,"var(--magenta)",7,9);
     farrow(g,c1+w1/2,100,-F*0.5,0,"var(--green)","F₂₁",-34,-6);farrow(g,c2+w2/2,100,F*0.5,0,"var(--green)","F₁₂",4,-6)}
   txt(g,c1+w1/2,178,"a₁ = "+fx(a1,1),{"text-anchor":"middle","font-size":12,fill:"var(--blue)"});txt(g,c2+w2/2,178,"a₂ = "+fx(a2,1),{"text-anchor":"middle","font-size":12,fill:"var(--red)"});
   const ro=S.ro2;ro.f.textContent=N(F);ro.a.textContent=fx(a1,2)+", "+fx(a2,2)+" m/s²";const v1=-a1*tau,v2=a2*tau;ro.v.textContent=fx(v1,2)+", "+fx(v2,2)+" m/s";ro.p.textContent=fx(m1*v1+m2*v2,2)+" kg·m/s"}
@@ -508,14 +516,28 @@ function draw10(dt){const fl=S.md10==="floor";["F10"].forEach(id=>$("#"+id).clos
   E("path",{d,fill:"none",stroke:"var(--blue)","stroke-width":2.5},p);E("line",{x1:Gt.X(0),x2:Gt.X(60),y1:Gt.Y(mus),y2:Gt.Y(mus),stroke:"var(--red)","stroke-dasharray":"4 4"},p);E("circle",{cx:Gt.X(S.th10),cy:Gt.Y(Math.tan(th)),r:6,fill:"var(--magenta)"},p)}
 
 /* 11. drag */
-const OBJ={rain:{m:1000*4/3*Math.PI*0.0015**3,A:Math.PI*0.0015**2,C:0.6,h:1200},diver:{m:75,A:0.7,C:1.0,h:3000},ball:{m:0.0027,A:Math.PI*0.02**2,C:0.5,h:50}};
+const S11={t:0,speed:()=>1};const OBJ={rain:{m:1000*4/3*Math.PI*0.0015**3,A:Math.PI*0.0015**2,C:0.6,h:1200},diver:{m:75,A:0.7,C:1.0,h:3000},ball:{m:0.0027,A:Math.PI*0.02**2,C:0.5,h:50}};
 (function(){const c=$("#c11");seg(c,{id:"ob11",key:"obj",options:[["rain","rain"],["diver","diver"],["ball","ball"]],value:"rain",on:()=>{setSlider($("#C11"),OBJ[S.ob11].C)}});
   slider(c,{id:"C11",key:"Cd",min:0.2,max:1.5,step:0.05,value:0.6,fmt:v=>v.toFixed(2),on:u11});S.ro11=readout(c,[["vt","rVt"],["t95","rT95"],["fr","rFree"]]);})();
-function u11(){const o=OBJ[S.ob11],rho=1.2,C=S.C11;const k=C*rho*o.A/(2*o.m);const vt=Math.sqrt(G0/k);const t95=Math.atanh(0.95)*vt/G0;const vfree=Math.sqrt(2*G0*o.h);
+function u11(){S11.t=0;const o=OBJ[S.ob11],rho=1.2,C=S.C11;const k=C*rho*o.A/(2*o.m);const vt=Math.sqrt(G0/k);const t95=Math.atanh(0.95)*vt/G0;const vfree=Math.sqrt(2*G0*o.h);
   const ro=S.ro11;ro.vt.textContent=fx(vt,2)+" m/s = "+fx(vt*3.6,1)+" km/h";ro.t95.textContent=fx(t95,2)+" s";ro.fr.textContent=fx(vfree*3.6,0)+" km/h (h = "+o.h+" m)";
   const g=$("#v11");g.innerHTML="";const Tm=t95*2;const G=graph(g,{l:70,r:420,t0:24,b:200,xmin:0,xmax:Tm,ymin:0,ymax:vt*1.6,xt:[[0,"0"],[Tm/2,fx(Tm/2,1)],[Tm,fx(Tm,1)+" s"]],yt:[[0,"0"],[vt,"vₜ = "+fx(vt,1)]],yl:t("gV11")});
   let d="",d2="";for(let i=0;i<=200;i++){const tt=Tm*i/200;d+=(i?"L":"M")+G.X(tt).toFixed(1)+","+G.Y(vt*Math.tanh(G0*tt/vt)).toFixed(1);const vf=G0*tt;if(vf<=vt*1.6)d2+=(d2?"L":"M")+G.X(tt).toFixed(1)+","+G.Y(vf).toFixed(1)}
-  E("line",{x1:G.X(0),x2:G.X(Tm),y1:G.Y(vt),y2:G.Y(vt),stroke:"var(--muted)","stroke-dasharray":"4 4"},g);E("path",{d:d2,fill:"none",stroke:"var(--ink)","stroke-dasharray":"5 4","stroke-width":1.6},g);E("path",{d,fill:"none",stroke:"var(--red)","stroke-width":2.5},g)}
+  E("line",{x1:G.X(0),x2:G.X(Tm),y1:G.Y(vt),y2:G.Y(vt),stroke:"var(--muted)","stroke-dasharray":"4 4"},g);E("path",{d:d2,fill:"none",stroke:"var(--ink)","stroke-dasharray":"5 4","stroke-width":1.6},g);E("path",{d,fill:"none",stroke:"var(--red)","stroke-width":2.5},g);S11.G=G;S11.vt=vt;S11.Tm=Tm;S11.mk=E("g",{},g)}
+function draw11(dt){if(!S11.G)return;const vt=S11.vt,Tm=S11.Tm,o=OBJ[S.ob11];S11.t+=dt*S11.speed();if(S11.t>Tm+1)S11.t=0;const t=Math.min(S11.t,Tm);
+  const yd=tt=>vt*vt/G0*Math.log(Math.cosh(G0*tt/vt)),yf=tt=>0.5*G0*tt*tt,vd=tt=>vt*Math.tanh(G0*tt/vt);
+  // vertical scale: the drag-free object reaches the bottom at the end of the window
+  const Ymax=yf(Tm),top=34,bot=272,Y=y=>top+y/Ymax*(bot-top);const g=$("#v11a");g.innerHTML="";
+  const cols=[[130,lang==="ko"?"항력 있음":"with drag","var(--red)",yd,vd],[310,lang==="ko"?"항력 없음":"no drag","var(--muted)",yf,tt=>G0*tt]];
+  E("line",{x1:20,x2:420,y1:top,y2:top,stroke:"var(--line)"},g);
+  for(let k=0;k<=5;k++){const yy=Ymax*k/5;E("line",{x1:40,x2:50,y1:Y(yy),y2:Y(yy),stroke:"var(--muted)"},g);txt(g,36,Y(yy)+4,fx(yy,yy<10?1:0)+" m",{"text-anchor":"end","font-size":10,fill:"var(--muted)"})}
+  cols.forEach(([x,lab,c,yfun,vfun])=>{txt(g,x,20,lab,{"text-anchor":"middle","font-size":12,"font-weight":700,fill:c});
+    for(let k=1;k<=10;k++){const tk=Tm*k/10;if(tk>t)break;E("circle",{cx:x,cy:Y(yfun(tk)),r:5,fill:c,opacity:.25},g)}
+    const y=yfun(t);E("circle",{cx:x,cy:Y(y),r:9,fill:c},g);
+    if(c==="var(--red)"){const v=vfun(t),D=(v/vt)**2;const L=42;farrow(g,x+16,Y(y),0,L,"var(--magenta)","mg",4,8);if(D>0.02)farrow(g,x+16,Y(y),0,-L*D,"var(--green)","D",4,0)}
+    txt(g,x-16,Y(y)+4,fx(vfun(t),1)+" m/s",{"font-size":11,fill:c,"text-anchor":"end"})});
+  txt(g,430,284,"t = "+fx(t,2)+" s",{"text-anchor":"end","font-size":12,"font-weight":700});
+  S11.mk.innerHTML="";E("line",{x1:S11.G.X(t),x2:S11.G.X(t),y1:24,y2:200,stroke:"var(--magenta)",opacity:.5},S11.mk);E("circle",{cx:S11.G.X(t),cy:S11.G.Y(vd(t)),r:5,fill:"var(--red)"},S11.mk);if(G0*t<=vt*1.6)E("circle",{cx:S11.G.X(t),cy:S11.G.Y(G0*t),r:4,fill:"var(--muted)"},S11.mk)}
 
 /* 12. curves */
 const S12={th:0,drift:0};
@@ -538,7 +560,7 @@ function draw12(dt){const flat=S.md12==="flat";$("#mu12").closest(".ctl").classL
 /* loop */
 function applyText(){document.querySelectorAll("[data-i18n]").forEach(el=>{el.innerHTML=t(el.dataset.i18n)});[S1,S2,S9].forEach(o=>o._btn&&o._btn())}
 let last=performance.now();
-function frame(now){const dt=Math.min(0.05,(now-last)/1000);last=now;NOW+=dt;anims.forEach(f=>f(dt));draw1(dt);draw2(dt);draw3(dt);draw5(dt);draw6(dt);draw7(dt);draw9(dt);draw10(dt);draw12(dt);requestAnimationFrame(frame)}
+function frame(now){const dt=Math.min(0.05,(now-last)/1000);last=now;NOW+=dt;anims.forEach(f=>f(dt));draw1(dt);draw2(dt);draw3(dt);draw5(dt);draw6(dt);draw7(dt);draw9(dt);draw10(dt);draw11(dt);draw12(dt);requestAnimationFrame(frame)}
 applyText();u4();u5();u8();u11();requestAnimationFrame(frame);
 </script>
 </body>

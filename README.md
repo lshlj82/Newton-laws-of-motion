@@ -47,7 +47,7 @@ The twelve sections follow the order of the lecture notes. Every value is recomp
 8. **Pushing two blocks:** A force pushes two blocks in contact. Free-body diagrams drawn apart show the action–reaction pair, with $F_{AB} = \frac{m_B}{m_A+m_B}F_\text{app}$.
 9. **Elevator:** An elevator makes a round trip while the scale shows $N = m(g+a)$. A graph of the scale reading tracks each phase of the ride.
 10. **Friction:** You pull a block along the floor, and the graph of $f$ against $F$ shows static friction rising to $\mu_s N$ and then dropping to kinetic friction $\mu_k N$. You can also tilt an incline until the block slips, at $\tan\theta_0 = \mu_s$.
-11. **Drag and terminal speed:** This section follows a raindrop, a skydiver, or a ping-pong ball. The page plots $v(t) = v_t\tanh(gt/v_t)$ and gives the terminal speed $v_t=\sqrt{2mg/C\rho A}$. For the raindrop, the terminal speed is about 27 km/h; with no drag it would land at about 550 km/h.
+11. **Drag and terminal speed:** This section follows a raindrop, a skydiver, or a ping-pong ball. An animation drops the object side by side with an identical object that feels no drag, showing the drag force $D$ growing until it balances $mg$. The page plots $v(t) = v_t\tanh(gt/v_t)$ and gives the terminal speed $v_t=\sqrt{2mg/C\rho A}$. For the raindrop, the terminal speed is about 27 km/h; with no drag it would land at about 550 km/h.
 12. **Curves:** On a flat road, the required $\mu_s = v^2/rg$ is compared with what the road can supply. On a banked road, the ideal angle is $\tan\theta = v^2/gr$. The car holds the curve or skids, and a cross-section shows the forces.
 
 ## Notes on the model
