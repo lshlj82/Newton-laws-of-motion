@@ -55,7 +55,7 @@ The twelve sections follow the order of the lecture notes. Every value is recomp
 - **Gravity:** The pages use $g = 9.8\ \text{m/s}^2$ on Earth, $1.62$ on the Moon, and $3.71$ on Mars.
 - **Drag:** Air density is taken as $\rho = 1.2\ \text{kg/m}^3$. The speed curve uses the exact solution for drag proportional to $v^2$.
 - **Animations:** Some animations are slowed down so the motion is easy to follow. The readouts always show real values.
-- **Light and dark mode:** The pages follow the system's light or dark setting.
+- **Light and dark mode:** The pages follow the system's light or dark setting, and a sun/moon button in the top-right corner switches by hand, and the choice is remembered across pages.
 - **Reduced motion:** Under `prefers-reduced-motion`, the second-law, third-law, and elevator demos start paused, and the header animation stays still.
 
 ## Credits
